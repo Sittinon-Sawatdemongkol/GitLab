@@ -1,0 +1,77 @@
+@startuml
+
+class Car
+class Person
+Person "1..1" - "0..n" Car : > owns
+
+@enduml
+
+=====
+
+@startuml
+
+class Mom
+class Son
+Mom "1..1" -- "0..n" Son  : > Has
+
+@enduml
+
+=====
+
+@startuml
+
+class Husband
+class Wife
+Husband "1..1" -- "1..1" Wife  : > Love
+
+@enduml
+
+=====
+
+@startuml
+
+class Pencil
+class Bag
+Pencil "1..n" -- "1..1" Bag  : > Is In The
+
+@enduml
+
+=====
+
+@startuml
+
+class Politician
+class Laws
+Politician "1..n" -- "1..n" Laws  : > Makes
+
+@enduml
+
+=====
+
+@startuml
+
+class Soldier
+class Uniform
+Soldier "1..1" -- "1..1" Uniform  : > Wear
+
+@enduml
+
+=====
+
+@startuml
+
+class CompanyPresident
+class Business
+CompanyPresident "1..1" -- "1..n" Business  : > Manage
+
+@enduml
+
+=====
+
+@startuml
+
+class BlackBoard
+class ClassRooms
+BlackBoard "1..1" -- "1..n" ClassRooms  : > Is In The
+
+@enduml

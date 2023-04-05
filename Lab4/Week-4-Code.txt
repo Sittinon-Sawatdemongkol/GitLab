@@ -1,0 +1,195 @@
+@startuml
+
+class Bird{
+    + Wing
+    + Feather
+    + Tail
+    - Age 
+    - Gender
+    + Fly()
+    + Gliding()
+    + Walk()
+}
+class Hawk
+class Goose
+class Duck
+class Chicken
+
+Bird o-- Hawk
+Bird o-- Goose
+Bird o-- Duck
+Bird o-- Chicken
+
+@enduml
+
+=====
+
+@startuml
+
+class Fish{
+    + Gills 
+    + Scales 
+    + Fins 
+    - Age 
+    - Gender
+    + Swim()
+    + UnderwaterBreathing()
+}
+class Betta 
+class Mackerel
+class Salmon
+
+Fish o-- Betta
+Fish o-- Mackerel
+Fish o-- Salmon
+
+
+@enduml
+
+=====
+
+@startuml
+
+class Reptiles{
+    + Scales 
+    + Tail
+    - Cold-Blooded
+    - Age 
+    - Gender
+    + Move()
+    + Swim()
+}
+class Crocodile
+class Snake
+class Chameleon
+
+Reptiles o-- Crocodile
+Reptiles o-- Snake
+Reptiles o-- Chameleon
+
+
+@enduml
+
+=====
+
+@startuml
+
+class Amphibians{
+    + MucousSkin
+    + Gills
+    - Lungs
+    - Age 
+    - Gender
+    + Jump()
+    + Swim()
+}
+class Frog
+class TreeFrog
+class BullFrog
+
+Amphibians o-- Frog
+Amphibians o-- TreeFrog
+Amphibians o-- BullFrog
+
+
+@enduml
+
+=====
+
+@startuml
+
+class  Arthropods{
+    + Has More Than 4 Legs
+    + No Spine
+    - Age 
+    - Gender
+    + Move()
+    + Breed()
+}
+class Shrimp
+class Millipede
+class Spider 
+class Ant
+
+Arthropods o-- Shrimp
+Arthropods o-- Millipede
+Arthropods o-- Spider
+Arthropods o-- Ant
+
+@enduml
+
+=====
+
+@startuml
+
+class Vehicle{
+    + Engine
+    + Seat
+    + Wheel
+    + StartEngine()
+    + Move()
+}
+
+class Land_Vehicle{
+    + Door
+    + Wheel
+    + SteeringWheel
+    + Moving On The Land()
+}
+
+class Water_Vehicle{
+    + Helm
+    + Propelled On Water()
+}
+
+class Air_Vehicle{
+    + Helm
+    + Wing
+    - Wheel
+    + Fly()
+    + Move()
+}
+
+Vehicle o-- Land_Vehicle
+Vehicle o-- Water_Vehicle
+Vehicle o-- Air_Vehicle
+
+class Car
+class Boat
+class Airplane
+
+Land_Vehicle o-- Car
+Water_Vehicle o-- Boat
+Air_Vehicle o-- Airplane
+
+@enduml
+
+=====
+@startuml
+
+class Residence{}
+
+class House{
+    + Garrage
+}
+class Building{
+    + MultipleRooms
+    + Parking
+}
+
+class SingleHouse{}
+class ShopHouse{}
+class TownHouse{}
+class Apartment{}
+class Condominium{}
+
+Residence o-- House
+Residence o-- Building
+
+House o-- SingleHouse
+House o-- ShopHouse
+House o-- TownHouse
+Building o-- Apartment
+Building o-- Condominium
+
+@enduml
